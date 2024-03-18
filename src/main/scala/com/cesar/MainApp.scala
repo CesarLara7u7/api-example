@@ -1,3 +1,3 @@
 object MainApp{
-  print("hello")
+  print("hello from rog strix")
 }
