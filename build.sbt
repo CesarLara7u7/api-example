@@ -74,7 +74,9 @@ lazy val root = (project in file(".")).
       "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
       "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
       "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
-      "ch.qos.logback" % "logback-classic" % "1.4.14"
+      "ch.qos.logback" % "logback-classic" % "1.4.14",
+      "org.scalactic" %% "scalactic" % "3.2.19",
+      "org.scalatest" %% "scalatest" % "3.2.19" % "test"
     )
   ).dependsOn(business, api, data)
   .aggregate(business, api, data)
